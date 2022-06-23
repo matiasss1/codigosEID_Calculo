@@ -1,4 +1,5 @@
 #CODIGO 2 GRAFICO DE FUNCION Y SU RESTRICCION PREGUNTA 2.4
+from cProfile import label
 from matplotlib import projections
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import axes3d
@@ -33,9 +34,7 @@ surface = ax.plot_surface(X, Y, z,cmap="summer") #le damos los valores
 surface1 = ax1.plot_surface(X, Y, r, cmap="hot") #al grafico y le damos 
                                                 # color con cmap
 
-
-
 os.system("cls") #borramos la consola para un codigo mas legible
-plt.plot(300,50, funcion(300,50), marker= "*", markersize = 10 ,color = "red") #creamos un punto 
-plt.title("")                                                                 #donde se encuentran 
+plt.plot(300,50, funcion(300,50) ,marker= "*", markersize = 10 ,color = "red") #creamos un punto 
+plt.title("GRAFICO 2")                                                         #donde se encuentran 
 plt.show() #mostramos la grafica en pantalla                                  y le damos forma

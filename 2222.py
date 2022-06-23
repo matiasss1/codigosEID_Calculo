@@ -29,7 +29,7 @@ r = restriccion(X,Y) #Hacemos lo mismo con la restriccion
 ax = fig.gca(projection='3d') 
 ax1 = fig.gca(projection='3d')
 
-surface = ax.plot_surface(X, Y, z,cmap="turbo") #le damos los valores
+surface = ax.plot_surface(X, Y, z,cmap="summer") #le damos los valores
 surface1 = ax1.plot_surface(X, Y, r, cmap="hot") #al grafico y le damos 
                                                 # color con cmap
 
@@ -39,4 +39,3 @@ os.system("cls") #borramos la consola para un codigo mas legible
 plt.plot(300,50, funcion(300,50), marker= "*", markersize = 10 ,color = "red") #creamos un punto 
 plt.title("")                                                                 #donde se encuentran 
 plt.show() #mostramos la grafica en pantalla                                  y le damos forma
-#-----------------------------------
